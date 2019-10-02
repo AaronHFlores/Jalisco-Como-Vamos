@@ -69,10 +69,10 @@ function GenerateTableCustom() {
       var headerCell = document.createElement("TH");
       headerCell.innerHTML = customers[0][i];
       row.appendChild(headerCell);
-      if (municipio[0].checked == false and i == 1)
+      /*if (municipio[0].checked == false and i == 1)
       {
         headerCell.style.display = "none";
-      }
+      }*/
 
   }
 
@@ -82,10 +82,10 @@ function GenerateTableCustom() {
       for (var j = 0; j < columnCount; j++) {
           var cell = row.insertCell(-1);
           cell.innerHTML = customers[i][j];
-          if (municipio[0].checked == false and j == 1)
+          /*if (municipio[0].checked == false and j == 1)
           {
             headerCell.style.display = "none";
-          }
+          }*/
       }
   }
 
@@ -94,7 +94,7 @@ function GenerateTableCustom() {
   dvTable.appendChild(table);
 }
 
-function start() {
+/*function start() {
        var mybody =document.getElementsByTagName("body")[0];
        mytable     = document.createElement("table");
        mytablebody = document.createElement("tbody");
@@ -118,4 +118,4 @@ function start() {
        }
        mytable.appendChild(mytablebody);
        mybody.appendChild(mytable);
-    }
+    }*/
