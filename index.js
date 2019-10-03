@@ -131,53 +131,6 @@ function questionSelect(){
 
 //Municipio
 function GenerateTableG() {
-  //Build an array containing Customer records.
-  var customers = new Array();
-  customers.push(["Customer Id", "Name", "Country"]);
-  customers.push([1, "Juanito", "Pepe"]);
-  customers.push([2, "Mudassar Khan", "India"]);
-  customers.push([3, "Suzanne Mathews", "France"]);
-  customers.push([4, "Robert Schidner", "Russia"]);
-
-  //Create a HTML Table element.
-  var table = document.createElement("TABLE");
-  table.border = "1";
-
-  //Get the count of columns.
-  var columnCount = customers[0].length;
-
-  //Add the header row.
-  var row = table.insertRow(-1);
-  for (var i = 0; i < columnCount; i++) {
-      var headerCell = document.createElement("TH");
-      headerCell.innerHTML = customers[0][i];
-      row.appendChild(headerCell);
-      /*if (municipio[0].checked == false and i == 1)
-      {
-        headerCell.style.display = "none";
-      }*/
-
-  }
-
-  //Add the data rows.
-  for (var i = 1; i < customers.length; i++) {
-      row = table.insertRow(-1);
-      for (var j = 0; j < columnCount; j++) {
-          var cell = row.insertCell(-1);
-          cell.innerHTML = customers[i][j];
-          /*if (municipio[0].checked == false and j == 1)
-          {
-            headerCell.style.display = "none";
-          }*/
-      }
-  }
-
-  var dvTable = document.getElementById("tablaDatos");
-  dvTable.innerHTML = "";
-  dvTable.appendChild(table);
-}
-
-function GenerateTableZ(){
   var isChecked = document.getElementById('p1').checked;
   var isChecked1 = document.getElementById('p2').checked;
   var isChecked2 = document.getElementById('p3').checked;
@@ -188,13 +141,13 @@ function GenerateTableZ(){
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Guadalajara"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
     customers.push(["Algo satisfecho (4)", ""]);
     customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contestó", ""]);
+    customers.push(["No sabe / No contest&oacute;", ""]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -219,7 +172,7 @@ function GenerateTableZ(){
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Guadalajara"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -250,7 +203,7 @@ function GenerateTableZ(){
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Guadalajara"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -281,7 +234,142 @@ function GenerateTableZ(){
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Guadalajara"]);
+    customers.push(["Nada satisfecho (1)", ""]);
+    customers.push(["Poco satisfecho (2)", ""]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
+    customers.push(["Algo satisfecho (4)", ""]);
+    customers.push(["Muy satisfecho (5)", ""]);
+    customers.push(["No sabe / No contest&oacute", ""]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+}
+
+function GenerateTableZ(){
+  var isChecked = document.getElementById('p1').checked;
+  var isChecked1 = document.getElementById('p2').checked;
+  var isChecked2 = document.getElementById('p3').checked;
+  var isChecked3 = document.getElementById('p4').checked;
+
+  var dvTable = document.getElementById("tablaDatos");
+  dvTable.innerHTML = "";
+
+  if (isChecked){
+    var customers = new Array();
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Zapopan"]);
+    customers.push(["Nada satisfecho (1)", ""]);
+    customers.push(["Poco satisfecho (2)", ""]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
+    customers.push(["Algo satisfecho (4)", ""]);
+    customers.push(["Muy satisfecho (5)", ""]);
+    customers.push(["No sabe / No contest&oacute;", ""]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+  if(isChecked1){
+    var customers = new Array();
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Zapopan"]);
+    customers.push(["Muy baja (1)", ""]);
+    customers.push(["Algo baja (2)", ""]);
+    customers.push(["Ni baja, ni alta (3)", ""]);
+    customers.push(["Algo alta (4)", ""]);
+    customers.push(["Muy alta (5)", ""]);
+    customers.push(["No sabe / No contest&oacute", ""]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+  if (isChecked2){
+    var customers = new Array();
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Zapopan"]);
+    customers.push(["Nada feliz (1)", ""]);
+    customers.push(["Poco feliz (2)", ""]);
+    customers.push(["Ni feliz, ni infeliz (3)", ""]);
+    customers.push(["Algo feliz (4)", ""]);
+    customers.push(["Muy feliz (5)", ""]);
+    customers.push(["No sabe / No contest&oacute", ""]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+  if(isChecked3){
+    var customers = new Array();
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Zapopan"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -323,13 +411,13 @@ function GenerateTableT(){
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Tlaquepaque"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
     customers.push(["Algo satisfecho (4)", ""]);
     customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contestó", ""]);
+    customers.push(["No sabe / No contest&oacute;", ""]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -354,7 +442,7 @@ function GenerateTableT(){
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Tlaquepaque"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -385,7 +473,7 @@ function GenerateTableT(){
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Tlaquepaque"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -416,7 +504,7 @@ function GenerateTableT(){
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Tlaquepaque"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -458,13 +546,13 @@ function GenerateTableTo(){
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Tonal&aacute;"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
     customers.push(["Algo satisfecho (4)", ""]);
     customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contestó", ""]);
+    customers.push(["No sabe / No contest&oacute;", ""]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -489,7 +577,7 @@ function GenerateTableTo(){
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Tonal&aacute;"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -520,7 +608,7 @@ function GenerateTableTo(){
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Tonal&aacute;"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -551,7 +639,7 @@ function GenerateTableTo(){
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Tonal&aacute;"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -593,13 +681,13 @@ function GenerateTableTl(){
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Tlajomulco"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
     customers.push(["Algo satisfecho (4)", ""]);
     customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contestó", ""]);
+    customers.push(["No sabe / No contest&oacute;", ""]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -624,7 +712,7 @@ function GenerateTableTl(){
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Tlajomulco"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -655,7 +743,7 @@ function GenerateTableTl(){
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Tlajomulco"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -686,7 +774,7 @@ function GenerateTableTl(){
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Tlajomulco"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -728,13 +816,13 @@ function GenerateTableS(){
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "El Salto"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
     customers.push(["Algo satisfecho (4)", ""]);
     customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contestó", ""]);
+    customers.push(["No sabe / No contest&oacute;", ""]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -759,7 +847,7 @@ function GenerateTableS(){
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "El Salto"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -790,7 +878,7 @@ function GenerateTableS(){
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "El Salto"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -821,7 +909,7 @@ function GenerateTableS(){
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "El Salto"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -863,13 +951,13 @@ function GenerateTableH(){
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Hombre"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
     customers.push(["Algo satisfecho (4)", ""]);
     customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contestó", ""]);
+    customers.push(["No sabe / No contest&oacute;", ""]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -894,7 +982,7 @@ function GenerateTableH(){
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Hombre"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -925,7 +1013,7 @@ function GenerateTableH(){
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Hombre"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -956,7 +1044,7 @@ function GenerateTableH(){
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Hombre"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -998,13 +1086,13 @@ function GenerateTableM(){
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Mujer"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
     customers.push(["Algo satisfecho (4)", ""]);
     customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contestó", ""]);
+    customers.push(["No sabe / No contest&oacute;", ""]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1029,7 +1117,7 @@ function GenerateTableM(){
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Mujer"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -1060,7 +1148,7 @@ function GenerateTableM(){
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Mujer"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -1091,7 +1179,7 @@ function GenerateTableM(){
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Mujer"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -1268,7 +1356,7 @@ function GenerateTableE2() {
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "18-29"]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "30-44"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -1299,7 +1387,7 @@ function GenerateTableE2() {
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "30-44"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -1330,7 +1418,7 @@ function GenerateTableE2() {
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "30-44"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -1361,7 +1449,7 @@ function GenerateTableE2() {
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "30-44"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -1403,7 +1491,7 @@ function GenerateTableE3() {
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "18-29"]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "45-59"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -1434,7 +1522,7 @@ function GenerateTableE3() {
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "45-59"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -1465,7 +1553,7 @@ function GenerateTableE3() {
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "45-59"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -1496,7 +1584,7 @@ function GenerateTableE3() {
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "45-59"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -1538,7 +1626,7 @@ function GenerateTableE4() {
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "18-29"]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "60+"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -1569,7 +1657,7 @@ function GenerateTableE4() {
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "60+"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -1600,7 +1688,7 @@ function GenerateTableE4() {
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "60+"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -1631,7 +1719,7 @@ function GenerateTableE4() {
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "60+"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -1673,7 +1761,7 @@ function GenerateTableSe() {
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "18-29"]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Secundaria"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -1704,7 +1792,7 @@ function GenerateTableSe() {
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Secundaria"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -1735,7 +1823,7 @@ function GenerateTableSe() {
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Secundaria"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -1766,7 +1854,7 @@ function GenerateTableSe() {
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Secundaria"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -1808,7 +1896,7 @@ function GenerateTableP() {
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "18-29"]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Preparatoria"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -1839,7 +1927,7 @@ function GenerateTableP() {
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Preparatoria"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -1870,7 +1958,7 @@ function GenerateTableP() {
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Preparatoria"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -1901,7 +1989,7 @@ function GenerateTableP() {
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Preparatoria"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -1943,7 +2031,7 @@ function GenerateTableU() {
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "18-29"]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Universidad"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -1974,7 +2062,7 @@ function GenerateTableU() {
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Universidad"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -2005,7 +2093,7 @@ function GenerateTableU() {
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Universidad"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -2036,7 +2124,7 @@ function GenerateTableU() {
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Universidad"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -2078,7 +2166,7 @@ function GenerateTableA() {
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "18-29"]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "A/B/C+"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -2109,7 +2197,7 @@ function GenerateTableA() {
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "A/B/C+"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -2140,7 +2228,7 @@ function GenerateTableA() {
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "A/B/C+"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -2171,7 +2259,7 @@ function GenerateTableA() {
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "A/B/C+"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -2213,7 +2301,7 @@ function GenerateTableMe() {
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "18-29"]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "C/C-"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -2244,7 +2332,7 @@ function GenerateTableMe() {
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "C/C-"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -2275,7 +2363,7 @@ function GenerateTableMe() {
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "C/C-"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -2306,7 +2394,7 @@ function GenerateTableMe() {
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "C/C-"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -2348,7 +2436,7 @@ function GenerateTableB() {
 
   if (isChecked){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "18-29"]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "D+/D/E"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
@@ -2379,7 +2467,7 @@ function GenerateTableB() {
   }
   if(isChecked1){
     var customers = new Array();
-    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", ""]);
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "D+/D/E"]);
     customers.push(["Muy baja (1)", ""]);
     customers.push(["Algo baja (2)", ""]);
     customers.push(["Ni baja, ni alta (3)", ""]);
@@ -2410,7 +2498,7 @@ function GenerateTableB() {
   }
   if (isChecked2){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan feliz es usted?", ""]);
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "D+/D/E"]);
     customers.push(["Nada feliz (1)", ""]);
     customers.push(["Poco feliz (2)", ""]);
     customers.push(["Ni feliz, ni infeliz (3)", ""]);
@@ -2441,7 +2529,7 @@ function GenerateTableB() {
   }
   if(isChecked3){
     var customers = new Array();
-    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", ""]);
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "D+/D/E"]);
     customers.push(["Nada satisfecho (1)", ""]);
     customers.push(["Poco satisfecho (2)", ""]);
     customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
