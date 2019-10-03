@@ -18,21 +18,21 @@
     background-color:white;
     z-index: 1;               /* hace que la capa sea opaca  */
 }
-.fijoH{
+/*.fijoH{
     position:fixed;
     font-family:verdana,arial;
     font-size:11pt;
     text-align:center;
-    padding: 10px 5px 10px 5px;    /* margen con valores: arriba - derecha - abajo - izquierda */
-    top: 10px;                    /* Distancia hasta el borde superior */
-    left: 0px;            /* Distancia hasta el borde izquierdo */
+    padding: 10px 5px 10px 5px;
+    top: 10px;
+    left: 0px;
     width:50%;
     background-color:white;
-    z-index: 1;               /* hace que la capa sea opaca  */
-}
+    z-index: 1;
+}*/
 .fijoT {
     position:absolute;
-    margin: 150px 5px 10px 5px;    /* margen con valores: arriba - derecha - abajo - izquierda */
+    margin: 170px 5px 10px 5px;    /* margen con valores: arriba - derecha - abajo - izquierda */
     font-family:verdana,arial;
     font-size:10pt;
 }
@@ -50,10 +50,12 @@
           <img src="https://i.ibb.co/w4rX45g/jcvretina2.png" alt="jcvretina2" border="2" width=250 height=100>
         </div>
         <div class="col-xs-3">
-          <label><input type="checkbox" name="pregunta" checked> &iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida?</label>
-          <label><input type="checkbox" name="pregunta" > &iquest;c&oacute;mo calificar&iacute;a su calidad de vida?</label>
-          <label><input type="checkbox" name="pregunta" > &iquest;qu&eacute; tan feliz es usted?</label>
-          <label><input type="checkbox" name="pregunta" > &iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?</label>
+          <form name = "check">
+            <label><input type="checkbox" name="pregunta" id ="p1" onclick="questionSelect()" onfocus="validCheckOF" onblur="validCheckOB"checked> &iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida?</label>
+            <label><input type="checkbox" name="pregunta" id ="p2" onclick="questionSelect()" > &iquest;c&oacute;mo calificar&iacute;a su calidad de vida?</label>
+            <label><input type="checkbox" name="pregunta" id ="p3" onclick="questionSelect()" > &iquest;qu&eacute; tan feliz es usted?</label>
+            <label><input type="checkbox" name="pregunta" id ="p4" onclick="questionSelect()" > &iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?</label>
+          </form>
         </div>
       </div>
     </div>
@@ -63,45 +65,43 @@
 
         </div>
         <div class="col-xs-4">
-          <label><input type="radio" name="filtro" onclick="dOptionM()" checked> Municipio</label><br>
+          <label><input type="radio" name="filtro" onclick="dOptionM()" id="mun" checked> Municipio</label><br>
           <form name="dengue">
-            <p>&emsp;<label><input type="radio" name="municipio" onclick="GenerateTableCustom()" checked> Guadalajara</label></p>
-            <p>&emsp;<label><input type="radio" name="municipio"> Zapopan</label></p>
-            <p>&emsp;<label><input type="radio" name="municipio"> Talquepaque</label></p>
-            <p>&emsp;<label><input type="radio" name="municipio"> Tonala</label></p>
-            <p>&emsp;<label><input type="radio" name="municipio"> Tlajomulco</label></p>
-            <p>&emsp;<label><input type="radio" name="municipio"> El Salto</label><br></p>
+            <p>&emsp;<label><input type="radio" name="municipio" onclick="GenerateTableG()" id = "guadalajara" checked> Guadalajara</label></p>
+            <p>&emsp;<label><input type="radio" name="municipio" onclick="GenerateTableZ()" id = "zapopan"> Zapopan</label></p>
+            <p>&emsp;<label><input type="radio" name="municipio" onclick="GenerateTableT()" id = "tlaquepaque"> Tlaquepaque</label></p>
+            <p>&emsp;<label><input type="radio" name="municipio" onclick="GenerateTableTo()" id = "tonala"> Tonala</label></p>
+            <p>&emsp;<label><input type="radio" name="municipio" onclick="GenerateTableTl()" id = "tlajomulco"> Tlajomulco</label></p>
+            <p>&emsp;<label><input type="radio" name="municipio" onclick="GenerateTableS()" id = "salto"> El Salto</label><br></p>
           </form>
 
-          <label><input type="radio" name="filtro" onclick="dOptionS()"> Sexo</label><br>
+          <label><input type="radio" name="filtro" onclick="dOptionS()" id="genero"> G&eacute;nero</label><br>
           <form name="dengue1">
-            <p>&emsp;<label><input type="radio" name="sexo"> Hombre</label></p>
-            <p>&emsp;<label><input type="radio" name="sexo"> Mujer</label><br></p>
+            <p>&emsp;<label><input type="radio" name="sexo" onclick="GenerateTableH()" id = "hombre" checked> Hombre</label></p>
+            <p>&emsp;<label><input type="radio" name="sexo" onclick="GenerateTableM()" id = "mujer"> Mujer</label><br></p>
           </form>
 
-          <label><input type="radio" name="filtro" onclick="dOptionE()"> Edad</label><br>
+          <label><input type="radio" name="filtro" onclick="dOptionE()" id="edad"> Edad</label><br>
           <form name="dengue2">
-            <p>&emsp;<label><input type="radio" name="edad"> 18-29</label></p>
-            <p>&emsp;<label><input type="radio" name="edad"> 30-44</label></p>
-            <p>&emsp;<label><input type="radio" name="edad"> 45-59</label></p>
-            <p>&emsp;<label><input type="radio" name="edad"> 60+</label><br></p>
+            <p>&emsp;<label><input type="radio" name="edad" onclick="GenerateTableE1()" id = "adultoJoven" checked> 18-29</label></p>
+            <p>&emsp;<label><input type="radio" name="edad" onclick="GenerateTableE2()" id = "adulto"> 30-44</label></p>
+            <p>&emsp;<label><input type="radio" name="edad" onclick="GenerateTableE3()" id = "adultoMedio"> 45-59</label></p>
+            <p>&emsp;<label><input type="radio" name="edad" onclick="GenerateTableE4()" id = "adultoMayor"> 60+</label><br></p>
           </form>
 
-          <label><input type="radio" name="filtro" onclick="dOptionEs()"> Escolaridad</label><br>
+          <label><input type="radio" name="filtro" onclick="dOptionEs()" id="escolaridad"> Escolaridad</label><br>
           <form name="dengue3">
-            <p>&emsp;<label><input type="radio" name="escolaridad"> Secundaria -</label></p>
-            <p>&emsp;<label><input type="radio" name="escolaridad"> Preparatoria </label></p>
-            <p>&emsp;<label><input type="radio" name="escolaridad"> Universidad +</label><br></p>
+            <p>&emsp;<label><input type="radio" name="escolaridad" onclick="GenerateTableSe()" id = "secundaria" checked> Secundaria -</label></p>
+            <p>&emsp;<label><input type="radio" name="escolaridad" onclick="GenerateTableP()" id = "preparatoria"> Preparatoria </label></p>
+            <p>&emsp;<label><input type="radio" name="escolaridad" onclick="GenerateTableU()" id = "universidad"> Universidad +</label><br></p>
           </form>
 
-          <label><input type="radio" name="filtro" onclick="dOptionNSE()"> N.S.E.(Regla 8x7)</label><br>
+          <label><input type="radio" name="filtro" onclick="dOptionNSE()" id="nse"> N.S.E.(Regla 8x7)</label><br>
           <form name="dengue4">
-            <p>&emsp;<label><input type="radio" name="nse"> A/B/C+ </label></p>
-            <p>&emsp;<label><input type="radio" name="nse"> C/C- </label></p>
-            <p>&emsp;<label><input type="radio" name="nse"> D+/D/E</label><br></p>
+            <p>&emsp;<label><input type="radio" name="nse" onclick="GenerateTableA()" id = "alto" checked> A/B/C+ </label></p>
+            <p>&emsp;<label><input type="radio" name="nse" onclick="GenerateTableMe()" id = "medio"> C/C- </label></p>
+            <p>&emsp;<label><input type="radio" name="nse" onclick="GenerateTableB()" id = "bajo"> D+/D/E</label><br></p>
           </form>
-
-          <input type="button" value="Datos Completos" onclick="GenerateTable()">
 
         </div>
       </div>
