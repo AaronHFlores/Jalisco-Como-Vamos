@@ -952,12 +952,12 @@ function GenerateTableH(){
   if (isChecked){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Hombre"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute;", ""]);
+    customers.push(["Nada satisfecho (1)", "1.0%"]);
+    customers.push(["Poco satisfecho (2)", "4.3%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "10.8%"]);
+    customers.push(["Algo satisfecho (4)", "37.3%"]);
+    customers.push(["Muy satisfecho (5)", "46.5%"]);
+    customers.push(["No sabe / No contest&oacute;", "0.0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -983,12 +983,12 @@ function GenerateTableH(){
   if(isChecked1){
     var customers = new Array();
     customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Hombre"]);
-    customers.push(["Muy baja (1)", ""]);
-    customers.push(["Algo baja (2)", ""]);
-    customers.push(["Ni baja, ni alta (3)", ""]);
-    customers.push(["Algo alta (4)", ""]);
-    customers.push(["Muy alta (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Muy baja (1)", "0.8%"]);
+    customers.push(["Algo baja (2)", "6.4%"]);
+    customers.push(["Ni baja, ni alta (3)", "31.0%"]);
+    customers.push(["Algo alta (4)", "43.1%"]);
+    customers.push(["Muy alta (5)", "18.4%"]);
+    customers.push(["No sabe / No contest&oacute", "0.2%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1014,12 +1014,12 @@ function GenerateTableH(){
   if (isChecked2){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Hombre"]);
-    customers.push(["Nada feliz (1)", ""]);
-    customers.push(["Poco feliz (2)", ""]);
-    customers.push(["Ni feliz, ni infeliz (3)", ""]);
-    customers.push(["Algo feliz (4)", ""]);
-    customers.push(["Muy feliz (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada feliz (1)", "1.2%"]);
+    customers.push(["Poco feliz (2)", "3.2%"]);
+    customers.push(["Ni feliz, ni infeliz (3)", "9.6%"]);
+    customers.push(["Algo feliz (4)", "36.5%"]);
+    customers.push(["Muy feliz (5)", "49.4%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1045,12 +1045,12 @@ function GenerateTableH(){
   if(isChecked3){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Hombre"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "1.3%"]);
+    customers.push(["Poco satisfecho (2)", "6.0%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "10.6%"]);
+    customers.push(["Algo satisfecho (4)", "43.0%"]);
+    customers.push(["Muy satisfecho (5)", "39.0%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1087,12 +1087,12 @@ function GenerateTableM(){
   if (isChecked){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Mujer"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute;", ""]);
+    customers.push(["Nada satisfecho (1)", "1.4%"]);
+    customers.push(["Poco satisfecho (2)", "6.7%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "9.9%"]);
+    customers.push(["Algo satisfecho (4)", "36.6%"]);
+    customers.push(["Muy satisfecho (5)", "45.4%"]);
+    customers.push(["No sabe / No contest&oacute;", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1118,12 +1118,12 @@ function GenerateTableM(){
   if(isChecked1){
     var customers = new Array();
     customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Mujer"]);
-    customers.push(["Muy baja (1)", ""]);
-    customers.push(["Algo baja (2)", ""]);
-    customers.push(["Ni baja, ni alta (3)", ""]);
-    customers.push(["Algo alta (4)", ""]);
-    customers.push(["Muy alta (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Muy baja (1)", "1.3%"]);
+    customers.push(["Algo baja (2)", "7.0%"]);
+    customers.push(["Ni baja, ni alta (3)", "32.5%"]);
+    customers.push(["Algo alta (4)", "40.5%"]);
+    customers.push(["Muy alta (5)", "18.6%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1149,12 +1149,12 @@ function GenerateTableM(){
   if (isChecked2){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Mujer"]);
-    customers.push(["Nada feliz (1)", ""]);
-    customers.push(["Poco feliz (2)", ""]);
-    customers.push(["Ni feliz, ni infeliz (3)", ""]);
-    customers.push(["Algo feliz (4)", ""]);
-    customers.push(["Muy feliz (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada feliz (1)", "1.1%"]);
+    customers.push(["Poco feliz (2)", "4.7%"]);
+    customers.push(["Ni feliz, ni infeliz (3)", "13.2%"]);
+    customers.push(["Algo feliz (4)", "36.8%"]);
+    customers.push(["Muy feliz (5)", "44.1%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1180,12 +1180,12 @@ function GenerateTableM(){
   if(isChecked3){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Mujer"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "2.1%"]);
+    customers.push(["Poco satisfecho (2)", "8.8%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "11.6%"]);
+    customers.push(["Algo satisfecho (4)", "44.5%"]);
+    customers.push(["Muy satisfecho (5)", "33.0%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1357,12 +1357,12 @@ function GenerateTableE2() {
   if (isChecked){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "30-44"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "1.1%"]);
+    customers.push(["Poco satisfecho (2)", "3.7%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "10.5%"]);
+    customers.push(["Algo satisfecho (4)", "38.4%"]);
+    customers.push(["Muy satisfecho (5)", "46.4%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1388,12 +1388,12 @@ function GenerateTableE2() {
   if(isChecked1){
     var customers = new Array();
     customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "30-44"]);
-    customers.push(["Muy baja (1)", ""]);
-    customers.push(["Algo baja (2)", ""]);
-    customers.push(["Ni baja, ni alta (3)", ""]);
-    customers.push(["Algo alta (4)", ""]);
-    customers.push(["Muy alta (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Muy baja (1)", "0.3%"]);
+    customers.push(["Algo baja (2)", "5.6%"]);
+    customers.push(["Ni baja, ni alta (3)", "29.9%"]);
+    customers.push(["Algo alta (4)", "45.9%"]);
+    customers.push(["Muy alta (5)", "18.4%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1419,12 +1419,12 @@ function GenerateTableE2() {
   if (isChecked2){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan feliz es usted?", "30-44"]);
-    customers.push(["Nada feliz (1)", ""]);
-    customers.push(["Poco feliz (2)", ""]);
-    customers.push(["Ni feliz, ni infeliz (3)", ""]);
-    customers.push(["Algo feliz (4)", ""]);
-    customers.push(["Muy feliz (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada feliz (1)", "1.1%"]);
+    customers.push(["Poco feliz (2)", "2.8%"]);
+    customers.push(["Ni feliz, ni infeliz (3)", "10.7%"]);
+    customers.push(["Algo feliz (4)", "40.3%"]);
+    customers.push(["Muy feliz (5)", "45.1%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1450,12 +1450,12 @@ function GenerateTableE2() {
   if(isChecked3){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "30-44"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "2.9%"]);
+    customers.push(["Poco satisfecho (2)", "6.6%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "10.4%"]);
+    customers.push(["Algo satisfecho (4)", "45.3%"]);
+    customers.push(["Muy satisfecho (5)", "34.7%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1492,12 +1492,12 @@ function GenerateTableE3() {
   if (isChecked){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "45-59"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "1.9%"]);
+    customers.push(["Poco satisfecho (2)", "8.1%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "11.3%"]);
+    customers.push(["Algo satisfecho (4)", "33.4%"]);
+    customers.push(["Muy satisfecho (5)", "45.3%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1523,12 +1523,12 @@ function GenerateTableE3() {
   if(isChecked1){
     var customers = new Array();
     customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "45-59"]);
-    customers.push(["Muy baja (1)", ""]);
-    customers.push(["Algo baja (2)", ""]);
-    customers.push(["Ni baja, ni alta (3)", ""]);
-    customers.push(["Algo alta (4)", ""]);
-    customers.push(["Muy alta (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Muy baja (1)", "1.9%"]);
+    customers.push(["Algo baja (2)", "9.3%"]);
+    customers.push(["Ni baja, ni alta (3)", "37.8%"]);
+    customers.push(["Algo alta (4)", "33.8%"]);
+    customers.push(["Muy alta (5)", "17.0%"]);
+    customers.push(["No sabe / No contest&oacute", "0.3%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1554,12 +1554,12 @@ function GenerateTableE3() {
   if (isChecked2){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan feliz es usted?", "45-59"]);
-    customers.push(["Nada feliz (1)", ""]);
-    customers.push(["Poco feliz (2)", ""]);
-    customers.push(["Ni feliz, ni infeliz (3)", ""]);
-    customers.push(["Algo feliz (4)", ""]);
-    customers.push(["Muy feliz (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada feliz (1)", "0.9%"]);
+    customers.push(["Poco feliz (2)", "5.8%"]);
+    customers.push(["Ni feliz, ni infeliz (3)", "11.8%"]);
+    customers.push(["Algo feliz (4)", "38.6%"]);
+    customers.push(["Muy feliz (5)", "42.7%"]);
+    customers.push(["No sabe / No contest&oacute", "0.2%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1585,12 +1585,12 @@ function GenerateTableE3() {
   if(isChecked3){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "45-59"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "1.7%"]);
+    customers.push(["Poco satisfecho (2)", "7.1%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "11.3%"]);
+    customers.push(["Algo satisfecho (4)", "43.9%"]);
+    customers.push(["Muy satisfecho (5)", "36.0%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1627,12 +1627,12 @@ function GenerateTableE4() {
   if (isChecked){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "60+"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "1.2%"]);
+    customers.push(["Poco satisfecho (2)", "8.1%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "11.2%"]);
+    customers.push(["Algo satisfecho (4)", "40.1%"]);
+    customers.push(["Muy satisfecho (5)", "39.2%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1658,12 +1658,12 @@ function GenerateTableE4() {
   if(isChecked1){
     var customers = new Array();
     customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "60+"]);
-    customers.push(["Muy baja (1)", ""]);
-    customers.push(["Algo baja (2)", ""]);
-    customers.push(["Ni baja, ni alta (3)", ""]);
-    customers.push(["Algo alta (4)", ""]);
-    customers.push(["Muy alta (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Muy baja (1)", "2.8%"]);
+    customers.push(["Algo baja (2)", "8.3%"]);
+    customers.push(["Ni baja, ni alta (3)", "39.0%"]);
+    customers.push(["Algo alta (4)", "35.5%"]);
+    customers.push(["Muy alta (5)", "14.2%"]);
+    customers.push(["No sabe / No contest&oacute", "0.2%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1689,12 +1689,12 @@ function GenerateTableE4() {
   if (isChecked2){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan feliz es usted?", "60+"]);
-    customers.push(["Nada feliz (1)", ""]);
-    customers.push(["Poco feliz (2)", ""]);
-    customers.push(["Ni feliz, ni infeliz (3)", ""]);
-    customers.push(["Algo feliz (4)", ""]);
-    customers.push(["Muy feliz (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada feliz (1)", "1.9%"]);
+    customers.push(["Poco feliz (2)", "6.4%"]);
+    customers.push(["Ni feliz, ni infeliz (3)", "17.7%"]);
+    customers.push(["Algo feliz (4)", "34.7%"]);
+    customers.push(["Muy feliz (5)", "39.3%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1720,12 +1720,12 @@ function GenerateTableE4() {
   if(isChecked3){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "60+"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "2.1%"]);
+    customers.push(["Poco satisfecho (2)", "13.8%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "12.1%"]);
+    customers.push(["Algo satisfecho (4)", "41.2%"]);
+    customers.push(["Muy satisfecho (5)", "30.8%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1762,12 +1762,12 @@ function GenerateTableSe() {
   if (isChecked){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Secundaria"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "1.5%"]);
+    customers.push(["Poco satisfecho (2)", "7.6%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "13.3%"]);
+    customers.push(["Algo satisfecho (4)", "35.5%"]);
+    customers.push(["Muy satisfecho (5)", "41.9%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1793,12 +1793,12 @@ function GenerateTableSe() {
   if(isChecked1){
     var customers = new Array();
     customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Secundaria"]);
-    customers.push(["Muy baja (1)", ""]);
-    customers.push(["Algo baja (2)", ""]);
-    customers.push(["Ni baja, ni alta (3)", ""]);
-    customers.push(["Algo alta (4)", ""]);
-    customers.push(["Muy alta (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Muy baja (1)", "1.6%"]);
+    customers.push(["Algo baja (2)", "8.4%"]);
+    customers.push(["Ni baja, ni alta (3)", "39.9%"]);
+    customers.push(["Algo alta (4)", "34.0%"]);
+    customers.push(["Muy alta (5)", "16.0%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1824,12 +1824,12 @@ function GenerateTableSe() {
   if (isChecked2){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Secundaria"]);
-    customers.push(["Nada feliz (1)", ""]);
-    customers.push(["Poco feliz (2)", ""]);
-    customers.push(["Ni feliz, ni infeliz (3)", ""]);
-    customers.push(["Algo feliz (4)", ""]);
-    customers.push(["Muy feliz (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada feliz (1)", "1.6%"]);
+    customers.push(["Poco feliz (2)", "5.6%"]);
+    customers.push(["Ni feliz, ni infeliz (3)", "14.9%"]);
+    customers.push(["Algo feliz (4)", "37.0%"]);
+    customers.push(["Muy feliz (5)", "40.9%"]);
+    customers.push(["No sabe / No contest&oacute", "0.0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1855,12 +1855,12 @@ function GenerateTableSe() {
   if(isChecked3){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Secundaria"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "2.7%"]);
+    customers.push(["Poco satisfecho (2)", "9.7%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "12.7%"]);
+    customers.push(["Algo satisfecho (4)", "45.2%"]);
+    customers.push(["Muy satisfecho (5)", "29.6%"]);
+    customers.push(["No sabe / No contest&oacute", "0.0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1897,12 +1897,12 @@ function GenerateTableP() {
   if (isChecked){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Preparatoria"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "0.4%"]);
+    customers.push(["Poco satisfecho (2)", "4.1%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "7.1%"]);
+    customers.push(["Algo satisfecho (4)", "39.4%"]);
+    customers.push(["Muy satisfecho (5)", "49.1%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1928,12 +1928,12 @@ function GenerateTableP() {
   if(isChecked1){
     var customers = new Array();
     customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Preparatoria"]);
-    customers.push(["Muy baja (1)", ""]);
-    customers.push(["Algo baja (2)", ""]);
-    customers.push(["Ni baja, ni alta (3)", ""]);
-    customers.push(["Algo alta (4)", ""]);
-    customers.push(["Muy alta (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Muy baja (1)", "0.3%"]);
+    customers.push(["Algo baja (2)", "6.5%"]);
+    customers.push(["Ni baja, ni alta (3)", "27.8%"]);
+    customers.push(["Algo alta (4)", "40.8%"]);
+    customers.push(["Muy alta (5)", "24.5%"]);
+    customers.push(["No sabe / No contest&oacute", "0.2%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1959,12 +1959,12 @@ function GenerateTableP() {
   if (isChecked2){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Preparatoria"]);
-    customers.push(["Nada feliz (1)", ""]);
-    customers.push(["Poco feliz (2)", ""]);
-    customers.push(["Ni feliz, ni infeliz (3)", ""]);
-    customers.push(["Algo feliz (4)", ""]);
-    customers.push(["Muy feliz (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada feliz (1)", "0.8%"]);
+    customers.push(["Poco feliz (2)", "3.1%"]);
+    customers.push(["Ni feliz, ni infeliz (3)", "7.6%"]);
+    customers.push(["Algo feliz (4)", "32.9%"]);
+    customers.push(["Muy feliz (5)", "55.6%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -1990,12 +1990,12 @@ function GenerateTableP() {
   if(isChecked3){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Preparatoria"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "0.3%"]);
+    customers.push(["Poco satisfecho (2)", "6.6%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "9.0%"]);
+    customers.push(["Algo satisfecho (4)", "40.5%"]);
+    customers.push(["Muy satisfecho (5)", "43.7%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2032,12 +2032,12 @@ function GenerateTableU() {
   if (isChecked){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "Universidad"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "1.3%"]);
+    customers.push(["Poco satisfecho (2)", "3.0%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "7.6%"]);
+    customers.push(["Algo satisfecho (4)", "36.8%"]);
+    customers.push(["Muy satisfecho (5)", "51.3%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2063,12 +2063,12 @@ function GenerateTableU() {
   if(isChecked1){
     var customers = new Array();
     customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "Universidad"]);
-    customers.push(["Muy baja (1)", ""]);
-    customers.push(["Algo baja (2)", ""]);
-    customers.push(["Ni baja, ni alta (3)", ""]);
-    customers.push(["Algo alta (4)", ""]);
-    customers.push(["Muy alta (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Muy baja (1)", "0.7%"]);
+    customers.push(["Algo baja (2)", "3.7%"]);
+    customers.push(["Ni baja, ni alta (3)", "19.2%"]);
+    customers.push(["Algo alta (4)", "58.0%"]);
+    customers.push(["Muy alta (5)", "18.1%"]);
+    customers.push(["No sabe / No contest&oacute", "0.3%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2094,12 +2094,12 @@ function GenerateTableU() {
   if (isChecked2){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan feliz es usted?", "Universidad"]);
-    customers.push(["Nada feliz (1)", ""]);
-    customers.push(["Poco feliz (2)", ""]);
-    customers.push(["Ni feliz, ni infeliz (3)", ""]);
-    customers.push(["Algo feliz (4)", ""]);
-    customers.push(["Muy feliz (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada feliz (1)", "0.8%"]);
+    customers.push(["Poco feliz (2)", "1.6%"]);
+    customers.push(["Ni feliz, ni infeliz (3)", "8.7%"]);
+    customers.push(["Algo feliz (4)", "38.5%"]);
+    customers.push(["Muy feliz (5)", "50.3%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2125,12 +2125,12 @@ function GenerateTableU() {
   if(isChecked3){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "Universidad"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "1.0%"]);
+    customers.push(["Poco satisfecho (2)", "4.0%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "9.8%"]);
+    customers.push(["Algo satisfecho (4)", "44.3%"]);
+    customers.push(["Muy satisfecho (5)", "40.9%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2167,12 +2167,12 @@ function GenerateTableA() {
   if (isChecked){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "A/B/C+"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "0.8%"]);
+    customers.push(["Poco satisfecho (2)", "3.2%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "7.4%"]);
+    customers.push(["Algo satisfecho (4)", "35.4%"]);
+    customers.push(["Muy satisfecho (5)", "53.3%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2198,12 +2198,12 @@ function GenerateTableA() {
   if(isChecked1){
     var customers = new Array();
     customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "A/B/C+"]);
-    customers.push(["Muy baja (1)", ""]);
-    customers.push(["Algo baja (2)", ""]);
-    customers.push(["Ni baja, ni alta (3)", ""]);
-    customers.push(["Algo alta (4)", ""]);
-    customers.push(["Muy alta (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Muy baja (1)", "0.1%"]);
+    customers.push(["Algo baja (2)", "4.1%"]);
+    customers.push(["Ni baja, ni alta (3)", "21.9%"]);
+    customers.push(["Algo alta (4)", "51.4%"]);
+    customers.push(["Muy alta (5)", "22.1%"]);
+    customers.push(["No sabe / No contest&oacute", "0.3%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2229,12 +2229,12 @@ function GenerateTableA() {
   if (isChecked2){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan feliz es usted?", "A/B/C+"]);
-    customers.push(["Nada feliz (1)", ""]);
-    customers.push(["Poco feliz (2)", ""]);
-    customers.push(["Ni feliz, ni infeliz (3)", ""]);
-    customers.push(["Algo feliz (4)", ""]);
-    customers.push(["Muy feliz (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada feliz (1)", "0.6%"]);
+    customers.push(["Poco feliz (2)", "2.7%"]);
+    customers.push(["Ni feliz, ni infeliz (3)", "8.4%"]);
+    customers.push(["Algo feliz (4)", "38.3%"]);
+    customers.push(["Muy feliz (5)", "50.0%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2260,12 +2260,12 @@ function GenerateTableA() {
   if(isChecked3){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "A/B/C+"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "0.6%"]);
+    customers.push(["Poco satisfecho (2)", "4.4%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "8.1%"]);
+    customers.push(["Algo satisfecho (4)", "46.0%"]);
+    customers.push(["Muy satisfecho (5)", "40.9%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2302,12 +2302,12 @@ function GenerateTableMe() {
   if (isChecked){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "C/C-"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "0.4%"]);
+    customers.push(["Poco satisfecho (2)", "3.9%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "9.4%"]);
+    customers.push(["Algo satisfecho (4)", "42.0%"]);
+    customers.push(["Muy satisfecho (5)", "44.1%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2333,12 +2333,12 @@ function GenerateTableMe() {
   if(isChecked1){
     var customers = new Array();
     customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "C/C-"]);
-    customers.push(["Muy baja (1)", ""]);
-    customers.push(["Algo baja (2)", ""]);
-    customers.push(["Ni baja, ni alta (3)", ""]);
-    customers.push(["Algo alta (4)", ""]);
-    customers.push(["Muy alta (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Muy baja (1)", "0.9%"]);
+    customers.push(["Algo baja (2)", "6.2%"]);
+    customers.push(["Ni baja, ni alta (3)", "30.4%"]);
+    customers.push(["Algo alta (4)", "44.1%"]);
+    customers.push(["Muy alta (5)", "18.3%"]);
+    customers.push(["No sabe / No contest&oacute", "0.2%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2364,12 +2364,12 @@ function GenerateTableMe() {
   if (isChecked2){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan feliz es usted?", "C/C-"]);
-    customers.push(["Nada feliz (1)", ""]);
-    customers.push(["Poco feliz (2)", ""]);
-    customers.push(["Ni feliz, ni infeliz (3)", ""]);
-    customers.push(["Algo feliz (4)", ""]);
-    customers.push(["Muy feliz (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada feliz (1)", "1.3%"]);
+    customers.push(["Poco feliz (2)", "3.1%"]);
+    customers.push(["Ni feliz, ni infeliz (3)", "8.9%"]);
+    customers.push(["Algo feliz (4)", "37.9%"]);
+    customers.push(["Muy feliz (5)", "48.7%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2395,12 +2395,12 @@ function GenerateTableMe() {
   if(isChecked3){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "C/C-"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "1.8%"]);
+    customers.push(["Poco satisfecho (2)", "6.9%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "11.4%"]);
+    customers.push(["Algo satisfecho (4)", "43.6%"]);
+    customers.push(["Muy satisfecho (5)", "36.3%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2437,12 +2437,12 @@ function GenerateTableB() {
   if (isChecked){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "D+/D/E"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "2.1%"]);
+    customers.push(["Poco satisfecho (2)", "9.4%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "13.4%"]);
+    customers.push(["Algo satisfecho (4)", "33.5%"]);
+    customers.push(["Muy satisfecho (5)", "41.5%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2468,12 +2468,12 @@ function GenerateTableB() {
   if(isChecked1){
     var customers = new Array();
     customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "D+/D/E"]);
-    customers.push(["Muy baja (1)", ""]);
-    customers.push(["Algo baja (2)", ""]);
-    customers.push(["Ni baja, ni alta (3)", ""]);
-    customers.push(["Algo alta (4)", ""]);
-    customers.push(["Muy alta (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Muy baja (1)", "2.1%"]);
+    customers.push(["Algo baja (2)", "9.8%"]);
+    customers.push(["Ni baja, ni alta (3)", "40.3%"]);
+    customers.push(["Algo alta (4)", "31.7%"]);
+    customers.push(["Muy alta (5)", "16.1%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2499,12 +2499,12 @@ function GenerateTableB() {
   if (isChecked2){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan feliz es usted?", "D+/D/E"]);
-    customers.push(["Nada feliz (1)", ""]);
-    customers.push(["Poco feliz (2)", ""]);
-    customers.push(["Ni feliz, ni infeliz (3)", ""]);
-    customers.push(["Algo feliz (4)", ""]);
-    customers.push(["Muy feliz (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada feliz (1)", "1.3%"]);
+    customers.push(["Poco feliz (2)", "5.8%"]);
+    customers.push(["Ni feliz, ni infeliz (3)", "17.2%"]);
+    customers.push(["Algo feliz (4)", "33.8%"]);
+    customers.push(["Muy feliz (5)", "41.9%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
@@ -2530,12 +2530,12 @@ function GenerateTableB() {
   if(isChecked3){
     var customers = new Array();
     customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "D+/D/E"]);
-    customers.push(["Nada satisfecho (1)", ""]);
-    customers.push(["Poco satisfecho (2)", ""]);
-    customers.push(["Ni satisfecho, ni insatisfecho (3)", ""]);
-    customers.push(["Algo satisfecho (4)", ""]);
-    customers.push(["Muy satisfecho (5)", ""]);
-    customers.push(["No sabe / No contest&oacute", ""]);
+    customers.push(["Nada satisfecho (1)", "2.3%"]);
+    customers.push(["Poco satisfecho (2)", "10.5%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "13.5%"]);
+    customers.push(["Algo satisfecho (4)", "43.0%"]);
+    customers.push(["Muy satisfecho (5)", "30.6%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
