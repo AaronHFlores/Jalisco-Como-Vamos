@@ -1,6 +1,10 @@
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 )
 const renderer = new THREE.WebGLRenderer({ antialias: true})
 renderer.setSize( window.innerWidth, window.innerHeight )
+window.onload = function() {
+  dOptionM();
+	GenerateTable();
+};
 
 window.addEventListener( 'resize', () => {
 	let width = window.innerWidth
@@ -102,13 +106,14 @@ function dOptionM(){
 	dengue.municipio[4].disabled = false;
 	dengue.municipio[5].disabled = false;
 
-
 	dengue1.sexo[0].disabled = true;
 	dengue1.sexo[1].disabled = true;
+
 	dengue2.edad[0].disabled = true;
 	dengue2.edad[1].disabled = true;
 	dengue2.edad[2].disabled = true;
 	dengue2.edad[3].disabled = true;
+
 	dengue3.escolaridad[0].disabled = true;
 	dengue3.escolaridad[1].disabled = true;
 	dengue3.escolaridad[2].disabled = true;
@@ -116,91 +121,106 @@ function dOptionM(){
 	dengue4.nse[0].disabled = true;
 	dengue4.nse[1].disabled = true;
 	dengue4.nse[2].disabled = true;
-
 }
+
 function dOptionS(){
-
-
-	dengue1.sexo[0].disabled = false;
-	dengue1.sexo[1].disabled = false;
-
-	for (var i = 0; i <=5; i++) {
-	dengue.municipio[i].disabled = true;
-}
-/*	dengue.municipio[1].disabled = true;
+  dengue.municipio[0].disabled = true;
+  dengue.municipio[1].disabled = true;
 	dengue.municipio[2].disabled = true;
 	dengue.municipio[3].disabled = true;
 	dengue.municipio[4].disabled = true;
-	dengue.municipio[5].disabled = true;*/
+	dengue.municipio[5].disabled = true;
+
+  dengue1.sexo[0].disabled = false;
+  dengue1.sexo[1].disabled = false;
+
 	dengue2.edad[0].disabled = true;
 	dengue2.edad[1].disabled = true;
 	dengue2.edad[2].disabled = true;
 	dengue2.edad[3].disabled = true;
+
 	dengue3.escolaridad[0].disabled = true;
 	dengue3.escolaridad[1].disabled = true;
 	dengue3.escolaridad[2].disabled = true;
+
 	dengue4.nse[0].disabled = true;
 	dengue4.nse[1].disabled = true;
 	dengue4.nse[2].disabled = true;
 }
+
 function dOptionE(){
+  dengue.municipio[0].disabled = true;
+  dengue.municipio[1].disabled = true;
+  dengue.municipio[2].disabled = true;
+  dengue.municipio[3].disabled = true;
+  dengue.municipio[4].disabled = true;
+  dengue.municipio[5].disabled = true;
 
-		for (var i = 0; i <=4; i++) {
-			dengue2.edad[i].disabled = false;
-		}
-		for (var i = 0; i <=5; i++) {
-			dengue.municipio[i].disabled = true;
-		}
-		for (var i = 0; i <=2; i++) {
-			dengue1.sexo[i].disabled = true;
-		}
-		for (var i = 0; i <=3; i++) {
-			dengue3.escolaridad[i].disabled = true;
-		}
-		for (var i = 0; i <=3; i++) {
-		dengue4.nse[i].disabled = true;
-	}
+  dengue1.sexo[0].disabled = true;
+  dengue1.sexo[1].disabled = true;
 
+  dengue2.edad[0].disabled = false;
+  dengue2.edad[1].disabled = false;
+  dengue2.edad[2].disabled = false;
+  dengue2.edad[3].disabled = false;
+
+  dengue3.escolaridad[0].disabled = true;
+  dengue3.escolaridad[1].disabled = true;
+  dengue3.escolaridad[2].disabled = true;
+
+  dengue4.nse[0].disabled = true;
+  dengue4.nse[1].disabled = true;
+  dengue4.nse[2].disabled = true;
 }
 
 function dOptionEs(){
-	for (var i = 0; i <=4; i++) {
-		dengue2.edad[i].disabled = true;
-	}
-	for (var i = 0; i <=5; i++) {
-		dengue.municipio[i].disabled = true;
-	}
-	for (var i = 0; i <=2; i++) {
-		dengue1.sexo[i].disabled = true;
-	}
-	for (var i = 0; i <=3; i++) {
-		dengue3.escolaridad[i].disabled = false;
-	}
-	for (var i = 0; i <=3; i++) {
-	dengue4.nse[i].disabled = true;
-	}
+  dengue.municipio[0].disabled = true;
+  dengue.municipio[1].disabled = true;
+  dengue.municipio[2].disabled = true;
+  dengue.municipio[3].disabled = true;
+  dengue.municipio[4].disabled = true;
+  dengue.municipio[5].disabled = true;
 
+	dengue1.sexo[0].disabled = true;
+	dengue1.sexo[1].disabled = true;
+
+	dengue2.edad[0].disabled = true;
+	dengue2.edad[1].disabled = true;
+	dengue2.edad[2].disabled = true;
+	dengue2.edad[3].disabled = true;
+
+	dengue3.escolaridad[0].disabled = false;
+	dengue3.escolaridad[1].disabled = false;
+	dengue3.escolaridad[2].disabled = false;
+
+	dengue4.nse[0].disabled = true;
+	dengue4.nse[1].disabled = true;
+	dengue4.nse[2].disabled = true;
 }
+
 function dOptionNSE(){
-	for (var i = 0; i <=4; i++) {
-		dengue2.edad[i].disabled = true;
-	}
-	for (var i = 0; i <=5; i++) {
-		dengue.municipio[i].disabled = true;
-	}
-	for (var i = 0; i <=2; i++) {
-		dengue1.sexo[i].disabled = true;
-	}
-	for (var i = 0; i <=3; i++) {
-		dengue3.escolaridad[i].disabled = true;
-	}
-	for (var i = 0; i <=3; i++) {
-	dengue4.nse[i].disabled = false;
-	}
+  dengue.municipio[0].disabled = true;
+  dengue.municipio[1].disabled = true;
+  dengue.municipio[2].disabled = true;
+  dengue.municipio[3].disabled = true;
+  dengue.municipio[4].disabled = true;
+  dengue.municipio[5].disabled = true;
 
+	dengue1.sexo[0].disabled = true;
+	dengue1.sexo[1].disabled = true;
 
+	dengue2.edad[0].disabled = true;
+	dengue2.edad[1].disabled = true;
+	dengue2.edad[2].disabled = true;
+	dengue2.edad[3].disabled = true;
 
+	dengue3.escolaridad[0].disabled = true;
+	dengue3.escolaridad[1].disabled = true;
+	dengue3.escolaridad[2].disabled = true;
 
+	dengue4.nse[0].disabled = false;
+	dengue4.nse[1].disabled = false;
+	dengue4.nse[2].disabled = false;
 }
 /*function start() {
        var mybody =document.getElementsByTagName("body")[0];

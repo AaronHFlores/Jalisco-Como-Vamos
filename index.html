@@ -10,25 +10,25 @@
 .fijo{
     position:fixed;
     font-family:verdana,arial;
-            font-size:11pt;
-            padding: 10px 5px 10px 5px;    /* margen con valores: arriba - derecha - abajo - izquierda */
-            top: 0px;                    /* Distancia hasta el borde superior */
+    font-size:11pt;
+    padding: 10px 5px 10px 5px;    /* margen con valores: arriba - derecha - abajo - izquierda */
+    top: 0px;                    /* Distancia hasta el borde superior */
     left: 0px;            /* Distancia hasta el borde izquierdo */
-        width:100%;
-        background-color:white;
-        z-index: 1;               /* hace que la capa sea opaca  */
+    width:100%;
+    background-color:white;
+    z-index: 1;               /* hace que la capa sea opaca  */
 }
 .fijoH{
     position:fixed;
     font-family:verdana,arial;
-            font-size:11pt;
-            text-align:center;
-            padding: 10px 5px 10px 5px;    /* margen con valores: arriba - derecha - abajo - izquierda */
-            top: 10px;                    /* Distancia hasta el borde superior */
+    font-size:11pt;
+    text-align:center;
+    padding: 10px 5px 10px 5px;    /* margen con valores: arriba - derecha - abajo - izquierda */
+    top: 10px;                    /* Distancia hasta el borde superior */
     left: 0px;            /* Distancia hasta el borde izquierdo */
-        width:50%;
-        background-color:white;
-        z-index: 1;               /* hace que la capa sea opaca  */
+    width:50%;
+    background-color:white;
+    z-index: 1;               /* hace que la capa sea opaca  */
 }
 .fijoT {
     position:absolute;
@@ -36,72 +36,76 @@
     font-family:verdana,arial;
     font-size:10pt;
 }
+.header-shadow {
+  -moz-box-shadow: 0 3px 5px rgba(0,0,0,.1);
+  -webkit-box-shadow: 0 3px 5px rgba(0,0,0,.1);
+  box-shadow: 0 3px 5px rgba(0,0,0,.1);
+}
   </style>
-<main onload="genera_tabla()">
+<main onload = "dOptionM()">
   <body>
-  <div class = "container-fluid fijo">
-    <div class = "row">
-      <div class="col-xs-8" >
-        <img src="https://i.ibb.co/w4rX45g/jcvretina2.png" alt="jcvretina2" border="2" width=250 height=100>
-
+    <div class = "container-fluid fijo header-shadow">
+      <div class = "row">
+        <div class="col-xs-8" >
+          <img src="https://i.ibb.co/w4rX45g/jcvretina2.png" alt="jcvretina2" border="2" width=250 height=100>
+        </div>
+        <div class="col-xs-3">
+          <label><input type="checkbox" name="pregunta" checked> &iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida?</label>
+          <label><input type="checkbox" name="pregunta" > &iquest;c&oacute;mo calificar&iacute;a su calidad de vida?</label>
+          <label><input type="checkbox" name="pregunta" > &iquest;qu&eacute; tan feliz es usted?</label>
+          <label><input type="checkbox" name="pregunta" > &iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?</label>
+        </div>
       </div>
-      <div class="col-xs-1">
+    </div>
+    <div class = "container-fluid fijoT">
+      <div class = "row">
+        <div class="col-xs-8" id = "tablaDatos">
 
+        </div>
+        <div class="col-xs-4">
+          <label><input type="radio" name="filtro" onclick="dOptionM()" checked> Municipio</label><br>
+          <form name="dengue">
+            <p>&emsp;<label><input type="radio" name="municipio" onclick="GenerateTableCustom()" checked> Guadalajara</label></p>
+            <p>&emsp;<label><input type="radio" name="municipio"> Zapopan</label></p>
+            <p>&emsp;<label><input type="radio" name="municipio"> Talquepaque</label></p>
+            <p>&emsp;<label><input type="radio" name="municipio"> Tonala</label></p>
+            <p>&emsp;<label><input type="radio" name="municipio"> Tlajomulco</label></p>
+            <p>&emsp;<label><input type="radio" name="municipio"> El Salto</label><br></p>
+          </form>
+
+          <label><input type="radio" name="filtro" onclick="dOptionS()"> Sexo</label><br>
+          <form name="dengue1">
+            <p>&emsp;<label><input type="radio" name="sexo"> Hombre</label></p>
+            <p>&emsp;<label><input type="radio" name="sexo"> Mujer</label><br></p>
+          </form>
+
+          <label><input type="radio" name="filtro" onclick="dOptionE()"> Edad</label><br>
+          <form name="dengue2">
+            <p>&emsp;<label><input type="radio" name="edad"> 18-29</label></p>
+            <p>&emsp;<label><input type="radio" name="edad"> 30-44</label></p>
+            <p>&emsp;<label><input type="radio" name="edad"> 45-59</label></p>
+            <p>&emsp;<label><input type="radio" name="edad"> 60+</label><br></p>
+          </form>
+
+          <label><input type="radio" name="filtro" onclick="dOptionEs()"> Escolaridad</label><br>
+          <form name="dengue3">
+            <p>&emsp;<label><input type="radio" name="escolaridad"> Secundaria -</label></p>
+            <p>&emsp;<label><input type="radio" name="escolaridad"> Preparatoria </label></p>
+            <p>&emsp;<label><input type="radio" name="escolaridad"> Universidad +</label><br></p>
+          </form>
+
+          <label><input type="radio" name="filtro" onclick="dOptionNSE()"> N.S.E.(Regla 8x7)</label><br>
+          <form name="dengue4">
+            <p>&emsp;<label><input type="radio" name="nse"> A/B/C+ </label></p>
+            <p>&emsp;<label><input type="radio" name="nse"> C/C- </label></p>
+            <p>&emsp;<label><input type="radio" name="nse"> D+/D/E</label><br></p>
+          </form>
+
+          <input type="button" value="Datos Completos" onclick="GenerateTable()">
+
+        </div>
       </div>
-  </div>
-</div>
-  <div class = "container-fluid fijoT">
-  <div class = "row">
-    <div class="col-xs-8" id = "tablaDatos">
-
     </div>
-    <div class="col-xs-3">
-      <form name="dengue">
-      <label><input type="radio" name="filtro" onclick="dOptionM()"> Municipio</label><br>
-      <label><input type="radio" name="municipio" onclick="GenerateTableCustom()"> Guadalajara</label>
-      <label><input type="radio" name="municipio"> Zapopan</label>
-      <label><input type="radio" name="municipio"> Talquepaque</label>
-      <label><input type="radio" name="municipio"> Tonala</label>
-      <label><input type="radio" name="municipio"> Tlajomulco</label>
-      <label><input type="radio" name="municipio"> El Salto</label><br>
-    </form>
-<form name="dengue1">
-      <label><input type="radio" name="filtro" onclick="dOptionS()"> Sexo</label><br>
-      <label><input type="radio" name="sexo"> Hombre</label>
-      <label><input type="radio" name="sexo"> Mujer</label><br>
-</form>
-<form name="dengue2">
-      <label><input type="radio" name="filtro" onclick="dOptionE"> Edad</label><br>
-      <label><input type="radio" name="edad"> 18-29</label>
-      <label><input type="radio" name="edad"> 30-44</label>
-      <label><input type="radio" name="edad"> 45-59</label>
-      <label><input type="radio" name="edad"> 60+</label><br>
-</form>
-<form name="dengue3">
-      <label><input type="radio" name="filtro" onclick="dOptionEs"> Escolaridad</label><br>
-      <label><input type="radio" name="escolaridad"> Secundaria -</label>
-      <label><input type="radio" name="escolaridad"> Preparatoria </label>
-      <label><input type="radio" name="escolaridad"> Universidad +</label><br>
-</form>
-
-<form name="dengue4">
-  <label><input type="radio" name="filtro" onclick="dOptionNSE"> N.S.E.(Regla 8x7)</label><br>
-  <label><input type="radio" name="nse"> A/B/C+ </label>
-  <label><input type="radio" name="nse"> C/C- </label>
-  <label><input type="radio" name="nse"> D+/D/E</label><br>
-
-
-
-
-
-  </form>
-
-
-      <input type="button" value="Datos Completos" onclick="GenerateTable()">
-
-    </div>
-  </div>
-  </div>
-</body>
+  </body>
 </main>
 </html>
