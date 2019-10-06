@@ -35,15 +35,22 @@
     margin: 205px 5px 10px 5px;    /* margen con valores: arriba - derecha - abajo - izquierda */
     font-family:verdana,arial;
     font-size:10pt;
+
+}
+.background_div_body{
+  background-color:  #eb3750;
 }
 .header-shadow {
   -moz-box-shadow: 0 3px 5px rgba(0,0,0,.1);
   -webkit-box-shadow: 0 3px 5px rgba(0,0,0,.1);
   box-shadow: 0 3px 5px rgba(0,0,0,.1);
 }
+p , td, th{
+  color: white;
+}
   </style>
 <main onload = "dOptionM()">
-  <body>
+  <body class="background_div_body">
     <div class = "container-fluid fijo header-shadow">
       <div class = "row">
         <div class="col-xs-8" >
@@ -65,7 +72,7 @@
 
         </div>
         <div class="col-xs-4">
-          <label><input type="radio" name="filtro" onclick="dOptionM()" id="mun" checked> Municipio</label><br>
+          <p><label><input type="radio" name="filtro" onclick="dOptionM()" id="mun" checked> Municipio</label><br></p>
           <form name="dengue">
             <p>&emsp;<label><input type="radio" name="municipio" onclick="GenerateTableG()" id = "guadalajara" checked> Guadalajara</label></p>
             <p>&emsp;<label><input type="radio" name="municipio" onclick="GenerateTableZ()" id = "zapopan"> Zapopan</label></p>
@@ -75,13 +82,13 @@
             <p>&emsp;<label><input type="radio" name="municipio" onclick="GenerateTableS()" id = "salto"> El Salto</label><br></p>
           </form>
 
-          <label><input type="radio" name="filtro" onclick="dOptionS()" id="genero"> G&eacute;nero</label><br>
+          <p><label><input type="radio" name="filtro" onclick="dOptionS()" id="genero"> G&eacute;nero</label><br></p>
           <form name="dengue1">
             <p>&emsp;<label><input type="radio" name="sexo" onclick="GenerateTableH()" id = "hombre" checked> Hombre</label></p>
             <p>&emsp;<label><input type="radio" name="sexo" onclick="GenerateTableM()" id = "mujer"> Mujer</label><br></p>
-          </form>
+          <p></form>
 
-          <label><input type="radio" name="filtro" onclick="dOptionE()" id="edad"> Edad</label><br>
+          <p><label><input type="radio" name="filtro" onclick="dOptionE()" id="edad"> Edad</label><br></p>
           <form name="dengue2">
             <p>&emsp;<label><input type="radio" name="edad" onclick="GenerateTableE1()" id = "adultoJoven" checked> 18-29</label></p>
             <p>&emsp;<label><input type="radio" name="edad" onclick="GenerateTableE2()" id = "adulto"> 30-44</label></p>
@@ -89,14 +96,14 @@
             <p>&emsp;<label><input type="radio" name="edad" onclick="GenerateTableE4()" id = "adultoMayor"> 60+</label><br></p>
           </form>
 
-          <label><input type="radio" name="filtro" onclick="dOptionEs()" id="escolaridad"> Escolaridad</label><br>
+          <p><label><input type="radio" name="filtro" onclick="dOptionEs()" id="escolaridad"> Escolaridad</label><br></p>
           <form name="dengue3">
             <p>&emsp;<label><input type="radio" name="escolaridad" onclick="GenerateTableSe()" id = "secundaria" checked> Secundaria -</label></p>
             <p>&emsp;<label><input type="radio" name="escolaridad" onclick="GenerateTableP()" id = "preparatoria"> Preparatoria </label></p>
             <p>&emsp;<label><input type="radio" name="escolaridad" onclick="GenerateTableU()" id = "universidad"> Universidad +</label><br></p>
           </form>
 
-          <label><input type="radio" name="filtro" onclick="dOptionNSE()" id="nse"> N.S.E.(Regla 8x7)</label><br>
+          <p><label><input type="radio" name="filtro" onclick="dOptionNSE()" id="nse"> N.S.E.(Regla 8x7)</label><br></p>
           <form name="dengue4">
             <p>&emsp;<label><input type="radio" name="nse" onclick="GenerateTableA()" id = "alto" checked> A/B/C+ </label></p>
             <p>&emsp;<label><input type="radio" name="nse" onclick="GenerateTableMe()" id = "medio"> C/C- </label></p>
