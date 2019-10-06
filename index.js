@@ -39,6 +39,7 @@ function questionSelect(){
   var isChecked2 = document.getElementById('edad').checked;
   var isChecked3 = document.getElementById('escolaridad').checked;
   var isChecked4 = document.getElementById('nse').checked;
+  var isChecked5 = document.getElementById('nsee').checked;
 
   if(isChecked){
     isChecked = document.getElementById('guadalajara').checked;
@@ -46,7 +47,7 @@ function questionSelect(){
     isChecked2 = document.getElementById('tlaquepaque').checked;
     isChecked3 = document.getElementById('tonala').checked;
     isChecked4 = document.getElementById('tlajomulco').checked;
-    var isChecked5 = document.getElementById('salto').checked;
+    isChecked5 = document.getElementById('salto').checked;
 
     if(isChecked){
       GenerateTableG();
@@ -125,6 +126,21 @@ function questionSelect(){
     }
     else if(isChecked2){
       GenerateTableB();
+    }
+  }
+  else if (isChecked5){
+    isChecked = document.getElementById('altoo').checked;
+    isChecked1 = document.getElementById('medioo').checked;
+    isChecked2 = document.getElementById('bajoo').checked;
+
+    if(isChecked){
+      GenerateTableAA();
+    }
+    else if(isChecked1){
+      GenerateTableMee();
+    }
+    else if(isChecked2){
+      GenerateTableBB();
     }
   }
 }
@@ -2536,6 +2552,411 @@ function GenerateTableB() {
     customers.push(["Algo satisfecho (4)", "43.0%"]);
     customers.push(["Muy satisfecho (5)", "30.6%"]);
     customers.push(["No sabe / No contest&oacute", "0%"]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+}
+//NSE (8x7)
+function GenerateTableAA() {
+  var isChecked = document.getElementById('p1').checked;
+  var isChecked1 = document.getElementById('p2').checked;
+  var isChecked2 = document.getElementById('p3').checked;
+  var isChecked3 = document.getElementById('p4').checked;
+
+  var dvTable = document.getElementById("tablaDatos");
+  dvTable.innerHTML = "";
+
+  if (isChecked){
+    var customers = new Array();
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "A/B/C+"]);
+    customers.push(["Nada satisfecho (1)", "0.7%"]);
+    customers.push(["Poco satisfecho (2)", "3.9%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "6.8%"]);
+    customers.push(["Algo satisfecho (4)", "37.9%"]);
+    customers.push(["Muy satisfecho (5)", "50.6%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+  if(isChecked1){
+    var customers = new Array();
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "A/B/C+"]);
+    customers.push(["Muy baja (1)", "0.3%"]);
+    customers.push(["Algo baja (2)", "4.1%"]);
+    customers.push(["Ni baja, ni alta (3)", "22.8%"]);
+    customers.push(["Algo alta (4)", "50.6%"]);
+    customers.push(["Muy alta (5)", "21.8%"]);
+    customers.push(["No sabe / No contest&oacute", "0.3%"]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+  if (isChecked2){
+    var customers = new Array();
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "A/B/C+"]);
+    customers.push(["Nada feliz (1)", "0.6%"]);
+    customers.push(["Poco feliz (2)", "3.1%"]);
+    customers.push(["Ni feliz, ni infeliz (3)", "8.0%"]);
+    customers.push(["Algo feliz (4)", "38.0%"]);
+    customers.push(["Muy feliz (5)", "50.3%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+  if(isChecked3){
+    var customers = new Array();
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "A/B/C+"]);
+    customers.push(["Nada satisfecho (1)", "0.7%"]);
+    customers.push(["Poco satisfecho (2)", "6.0%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "9.6%"]);
+    customers.push(["Algo satisfecho (4)", "43.4%"]);
+    customers.push(["Muy satisfecho (5)", "40.2%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+}
+
+function GenerateTableMee() {
+  var isChecked = document.getElementById('p1').checked;
+  var isChecked1 = document.getElementById('p2').checked;
+  var isChecked2 = document.getElementById('p3').checked;
+  var isChecked3 = document.getElementById('p4').checked;
+
+  var dvTable = document.getElementById("tablaDatos");
+  dvTable.innerHTML = "";
+
+  if (isChecked){
+    var customers = new Array();
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "C/C-"]);
+    customers.push(["Nada satisfecho (1)", "1.0%"]);
+    customers.push(["Poco satisfecho (2)", "3.8%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "10.7%"]);
+    customers.push(["Algo satisfecho (4)", "37.7%"]);
+    customers.push(["Muy satisfecho (5)", "46.8%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+  if(isChecked1){
+    var customers = new Array();
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "C/C-"]);
+    customers.push(["Muy baja (1)", "0.9%"]);
+    customers.push(["Algo baja (2)", "6.5%"]);
+    customers.push(["Ni baja, ni alta (3)", "32.7%"]);
+    customers.push(["Algo alta (4)", "40.9%"]);
+    customers.push(["Muy alta (5)", "18.9%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+  if (isChecked2){
+    var customers = new Array();
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "C/C-"]);
+    customers.push(["Nada feliz (1)", "1.4%"]);
+    customers.push(["Poco feliz (2)", "3.1%"]);
+    customers.push(["Ni feliz, ni infeliz (3)", "11.5%"]);
+    customers.push(["Algo feliz (4)", "35.3%"]);
+    customers.push(["Muy feliz (5)", "48.7%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+  if(isChecked3){
+    var customers = new Array();
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "C/C-"]);
+    customers.push(["Nada satisfecho (1)", "1.4%"]);
+    customers.push(["Poco satisfecho (2)", "5.9%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "10.0%"]);
+    customers.push(["Algo satisfecho (4)", "45.3%"]);
+    customers.push(["Muy satisfecho (5)", "37.4%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+}
+
+function GenerateTableBB() {
+  var isChecked = document.getElementById('p1').checked;
+  var isChecked1 = document.getElementById('p2').checked;
+  var isChecked2 = document.getElementById('p3').checked;
+  var isChecked3 = document.getElementById('p4').checked;
+
+  var dvTable = document.getElementById("tablaDatos");
+  dvTable.innerHTML = "";
+
+  if (isChecked){
+    var customers = new Array();
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; usted con su vida", "D+/D/E"]);
+    customers.push(["Nada satisfecho (1)", "1.8%"]);
+    customers.push(["Poco satisfecho (2)", "9.8%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "14.2%"]);
+    customers.push(["Algo satisfecho (4)", "35.9%"]);
+    customers.push(["Muy satisfecho (5)", "38.0%"]);
+    customers.push(["No sabe / No contest&oacute", "0.2%"]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+  if(isChecked1){
+    var customers = new Array();
+    customers.push(["&iquest;c&oacute;mo calificar&iacute;a su calidad de vida?", "D+/D/E"]);
+    customers.push(["Muy baja (1)", "2.3%"]);
+    customers.push(["Algo baja (2)", "10.3%"]);
+    customers.push(["Ni baja, ni alta (3)", "42.1%"]);
+    customers.push(["Algo alta (4)", "31.3%"]);
+    customers.push(["Muy alta (5)", "14.0%"]);
+    customers.push(["No sabe / No contest&oacute", "0%"]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+  if (isChecked2){
+    var customers = new Array();
+    customers.push(["&iquest;qu&eacute; tan feliz es usted?", "D+/D/E"]);
+    customers.push(["Nada feliz (1)", "1.2%"]);
+    customers.push(["Poco feliz (2)", "6.5%"]);
+    customers.push(["Ni feliz, ni infeliz (3)", "16.4%"]);
+    customers.push(["Algo feliz (4)", "37.2%"]);
+    customers.push(["Muy feliz (5)", "38.6%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
+
+    var table = document.createElement("TABLE");
+    table.border = "1";
+
+    var columnCount = customers[0].length;
+
+    var row = table.insertRow(-1);
+    for (var i = 0; i < columnCount; i++) {
+        var headerCell = document.createElement("TH");
+        headerCell.innerHTML = customers[0][i];
+        row.appendChild(headerCell);
+    }
+
+    for (var i = 1; i < customers.length; i++) {
+        row = table.insertRow(-1);
+        for (var j = 0; j < columnCount; j++) {
+            var cell = row.insertCell(-1);
+            cell.innerHTML = customers[i][j];
+        }
+    }
+    dvTable.appendChild(table);
+  }
+  if(isChecked3){
+    var customers = new Array();
+    customers.push(["&iquest;qu&eacute; tan satisfecha(o) est&aacute; con su vida afectiva emocional?", "D+/D/E"]);
+    customers.push(["Nada satisfecho (1)", "3.4%"]);
+    customers.push(["Poco satisfecho (2)", "11.1%"]);
+    customers.push(["Ni satisfecho, ni insatisfecho (3)", "15.0%"]);
+    customers.push(["Algo satisfecho (4)", "42.9%"]);
+    customers.push(["Muy satisfecho (5)", "27.4%"]);
+    customers.push(["No sabe / No contest&oacute", "0.1%"]);
 
     var table = document.createElement("TABLE");
     table.border = "1";
