@@ -97,8 +97,8 @@
                 <nav class="navigation">
                     <ul class="show">
                         <li><a href="http://www.jaliscocomovamos.org/">Inicio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="http://www.jaliscocomovamos.org/blog">Blog</a></li>
+                        <li><a href="http://www.jaliscocomovamos.org/contactanos-2">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -123,10 +123,10 @@
 <!--        <div>-->
             <center>
                 <div class=" btn-group btn-group-toggle" data-toggle="buttons" style="padding-top: 1em;" >
-                    <label class="btn btn-secondary btn-xs"><input type="checkbox" name="pregunta1" value = 1 id ="p1"  onfocus="validCheckOF" onblur="validCheckOB" checked>&iquest;Qu&eacute; tan satisfecha(o) est&aacute; <br> usted con su vida?</label>
-                    <label class="btn btn-primary btn-xs" ><input type="checkbox" name="pregunta2" value = 2 id ="p2"> &iquest;C&oacute;mo calificar&iacute;a su calidad<br> de vida?</label>
-                    <label style="width:250px; height:62px" class="btn btn-secondary btn-xs"><input  type="checkbox" name="pregunta3" id ="p3" onclick="questionSelect()" > &iquest;Qu&eacute; tan feliz es usted?</label>
-                    <label class="btn btn-primary btn-xs" ><input type="checkbox" name="pregunta4" id ="p4" onclick="questionSelect()" > &iquest;Qu&eacute; tan satisfecha(o) est&aacute;<br> con su vida afectiva emocional?</label>
+                    <button class="btn btn-secondary btn-xs" type="submit" name="pregunta" value = 1 id ="p1">&iquest;Qu&eacute; tan satisfecha(o) est&aacute; <br> usted con su vida?</button>
+                    <button class="btn btn-primary btn-xs" type = "submit" name="pregunta" value = 2 id ="p2"> &iquest;C&oacute;mo calificar&iacute;a su calidad<br> de vida?</button>
+                    <button style="width:250px; height:62px" class="btn btn-secondary btn-xs" type="submit" name="pregunta" value = 3 id ="p3">&iquest;Qu&eacute; tan feliz es usted?</button>
+                    <button class="btn btn-primary btn-xs" type="submit" name="pregunta" value = 4 id ="p4"> &iquest;Qu&eacute; tan satisfecha(o) est&aacute;<br> con su vida afectiva emocional?</button>
                 </div>
             </center>
 <!--        </div>-->
@@ -167,11 +167,11 @@
                 <div class="dropdownEdades">
                     <select name="edades" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="edades">
 
-                    <option value="18 and edad <= 29) or (edad =>30 and edad <= 44) or (edad>=45 and edad <= 59) or edad>=60)">Edad</option>
+                    <option value="18 and edad <= 29) or (edad >=30 and edad <= 44) or (edad>=45 and edad <= 59) or edad>=60)">Edad</option>
 
-                    <option value="18 and edad <= 29)">18 - 29</option>
-                    <option value="30 and edad <= 44)">30 - 44</option>
-                    <option value="45 and edad <= 59)">45 - 59</option>
+                    <option value="18 and edad <= 29))">18 - 29</option>
+                    <option value="30 and edad <= 44))">30 - 44</option>
+                    <option value="45 and edad <= 59))">45 - 59</option>
                     <option value="60">60+</option>
                   </select>
                 </div>
@@ -196,7 +196,7 @@
 
                     <option value="'AB' or nse_8x7='C+' or nse_8x7='C' or nse_8x7='C-' or nse_8x7='D+' or nse_8x7='D' or nse_8x7='E')">NSE 8X7</option>
 
-                    <option value="'A' or nse_8x7 = 'B' or nse_8x7 = 'C+')">A/B/C+</option>
+                    <option value="'AB' or nse_8x7 = 'C+')">A/B/C+</option>
                     <option value="'C' or nse_8x7 = 'C-')">C/C-</option>
                     <option value="'D+' or nse_8x7 = 'D' or nse_8x7 = 'E')">D+/D/E</option>
                   </select>
@@ -215,7 +215,6 @@
                 </div>
             </div>
         </center>
-        <input type="submit" value="Enviar">
 
         <br><br>
       </form>
@@ -223,22 +222,10 @@
         <!--TABLE-->
         <div id="table">
           <?php
-          function options(){
-            if ($_POST["pregunta1"] == "1") {
-                tablep1();
-            } if ($_POST["pregunta2"] == "2") {
-                  tablep2();
-            }if ($_POST["pregunta3"] == "3") {
-                  tablep3();
-            }if ($_POST["pregunta4"] == "4") {
-                  tablep4();
-            }
-          }
-          options();
           function search(){
             $m = " (municipio = ".$_POST["municipios"]." ";
             $g = "and (genero = ".$_POST["generos"]." ";
-            $e = "and (edad >= ".$_POST["edades"]." ";
+            $e = "and ((edad >= ".$_POST["edades"]." ";
             $n8= "and (nse_8x7 = ".$_POST["nse8x7s"]." ";
             $n6= "and (nse_6x7 = ".$_POST["nse6x7s"]." ";
             $busqueda = " ".$m. " ".$g. " ".$e. " ".$n8. " ".$n6. " ";
@@ -248,7 +235,7 @@
           function tablep1(){
             $conexion = pg_connect("host='localhost' dbname=JCV port=5432 user=postgres password=postgres") or die ("Error de Conexión".pg_last_error());
             $bus = search();
-            $querycont = pg_query($conexion, "SELECT count(p1) as c FROM persona WHERE".$bus. ";");
+            $querycont = pg_query($conexion, "SELECT count(p1) as c FROM persona WHERE".$bus.";");
             $fil = pg_fetch_array($querycont);
             $query = pg_query($conexion, "SELECT p1,count(p1)*100/".$fil['c']." as p FROM persona WHERE".$bus. "GROUP BY p1 ORDER BY p1;");
 
@@ -285,7 +272,7 @@
           function tablep2(){
             $conexion = pg_connect("host='localhost' dbname=JCV port=5432 user=postgres password=postgres") or die ("Error de Conexión".pg_last_error());
             $bus = search();
-            $querycont = pg_query($conexion, "SELECT count(p2) as c FROM persona WHERE".$bus. ";");
+            $querycont = pg_query($conexion, "SELECT count(p2) as c FROM persona WHERE".$bus.";");
             $fil = pg_fetch_array($querycont);
             $query = pg_query($conexion, "SELECT p2,count(p2)*100/".$fil['c']." as p FROM persona WHERE".$bus. "GROUP BY p2 ORDER BY p2;");
 
@@ -322,7 +309,7 @@
           function tablep3(){
             $conexion = pg_connect("host='localhost' dbname=JCV port=5432 user=postgres password=postgres") or die ("Error de Conexión".pg_last_error());
             $bus = search();
-            $querycont = pg_query($conexion, "SELECT count(p3) as c FROM persona WHERE".$bus. ";");
+            $querycont = pg_query($conexion, "SELECT count(p3) as c FROM persona WHERE".$bus.";");
             $fil = pg_fetch_array($querycont);
             $query = pg_query($conexion, "SELECT p3,count(p3)*100/".$fil['c']." as p FROM persona WHERE".$bus. "GROUP BY p3 ORDER BY p3;");
 
@@ -359,9 +346,11 @@
           function tablep4(){
             $conexion = pg_connect("host='localhost' dbname=JCV port=5432 user=postgres password=postgres") or die ("Error de Conexión".pg_last_error());
             $bus = search();
-            $querycont = pg_query($conexion, "SELECT count(p4) as c FROM persona WHERE".$bus. ";");
+            $querycont = pg_query($conexion, "SELECT count(p4) as c FROM persona WHERE".$bus.";");
             $fil = pg_fetch_array($querycont);
             $query = pg_query($conexion, "SELECT p4,count(p4)*100/".$fil['c']." as p FROM persona WHERE".$bus. "GROUP BY p4 ORDER BY p4;");
+
+            $numReg = pg_num_rows($query);
 
             $quest = array(
               "Nada satisfecho (1)",
@@ -390,6 +379,19 @@
 
             pg_close($conexion);
           }
+
+          function options(){
+            if ($_POST["pregunta"] == "1") {
+                tablep1();
+            } if ($_POST["pregunta"] == "2") {
+                  tablep2();
+            }if ($_POST["pregunta"] == "3") {
+                  tablep3();
+            }if ($_POST["pregunta"] == "4") {
+                  tablep4();
+            }
+          }
+          options();
            ?>
         </div>
 

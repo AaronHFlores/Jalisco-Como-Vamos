@@ -97,8 +97,8 @@
                 <nav class="navigation">
                     <ul class="show">
                         <li><a href="http://www.jaliscocomovamos.org/">Inicio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="http://www.jaliscocomovamos.org/blog">Blog</a></li>
+                        <li><a href="http://www.jaliscocomovamos.org/contactanos-2">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -121,101 +121,100 @@
         <form action="tabla.php" method="post">
 <!--     CHECKBOX DE LAS PREGUNTAS-->
 <!--        <div>-->
-            <center>
-                <div class=" btn-group btn-group-toggle" data-toggle="buttons" style="padding-top: 1em;" >
-                    <label class="btn btn-secondary btn-xs"><input type="checkbox" name="pregunta1" value = 1 id ="p1"  onfocus="validCheckOF" onblur="validCheckOB" >&iquest;Qu&eacute; tan satisfecha(o) est&aacute; <br> usted con su vida?</label>
-                    <label class="btn btn-primary btn-xs" ><input type="checkbox" name="pregunta2" value = 2 id ="p2"> &iquest;C&oacute;mo calificar&iacute;a su calidad<br> de vida?</label>
-                    <label style="width:250px; height:62px" class="btn btn-secondary btn-xs"><input  type="checkbox" name="pregunta3" value = 3 id ="p3"> &iquest;Qu&eacute; tan feliz es usted?</label>
-                    <label class="btn btn-primary btn-xs" ><input type="checkbox" name="pregunta4" value = 4 id ="p4"  > &iquest;Qu&eacute; tan satisfecha(o) est&aacute;<br> con su vida afectiva emocional?</label>
-                </div>
-            </center>
-<!--        </div>-->
+          <center>
+              <div class=" btn-group btn-group-toggle" data-toggle="buttons" style="padding-top: 1em;" >
+                  <button class="btn btn-secondary btn-xs" type="submit" name="pregunta" value = 1 id ="p1">&iquest;Qu&eacute; tan satisfecha(o) est&aacute; <br> usted con su vida?</button>
+                  <button class="btn btn-primary btn-xs" type = "submit" name="pregunta" value = 2 id ="p2"> &iquest;C&oacute;mo calificar&iacute;a su calidad<br> de vida?</button>
+                  <button style="width:250px; height:62px" class="btn btn-secondary btn-xs" type="submit" name="pregunta" value = 3 id ="p3">&iquest;Qu&eacute; tan feliz es usted?</button>
+                  <button class="btn btn-primary btn-xs" type="submit" name="pregunta" value = 4 id ="p4"> &iquest;Qu&eacute; tan satisfecha(o) est&aacute;<br> con su vida afectiva emocional?</button>
+              </div>
+          </center>
+          <!--        </div>-->
 
-        <br>
+          <br>
 
-        <!--     COMBO BOX DE LAS CATEGORÍAS-->
+          <!--     COMBO BOX DE LAS CATEGORÍAS-->
 
-        <center>
-            <div class="btn btn-group">
+          <center>
+          <div class="btn btn-group">
 
-                <!--    Municipios    -->
-                <div class="dropdownMunicipios">
-                  <select name="municipios" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="municipios">
+              <!--    Municipios    -->
+              <div class="dropdownMunicipios">
+                <select name="municipios" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="municipios">
 
-                    <option value="municipio">Municipio</option>
-                    <option value="GUADALAJARA">Guadalajara</option>
-                    <option value="ZAPOPAN">Zapopan</option>
-                    <option value="TLAQUEPAQUE">Tlaquepaque</option>
-                    <option value="TLAJOMULCO DE ZÚÑIGA">Tlajomulco</option>
-                    <option value="EL SALTO">El Salto</option>
-                    <option value="TONALÁ">Tonalá</option>
-                  </select>
-                </div>
+                  <option value="'GUADALAJARA' or municipio ='ZAPOPAN' or municipio ='TONALÁ' or municipio = 'TLAQUEPAQUE' or municipio = 'TLAJOMULCO DE ZÚÑIGA' or municipio = 'EL SALTO')">Municipio</option>
+                  <option value="'GUADALAJARA')">Guadalajara</option>
+                  <option value="'ZAPOPAN')">Zapopan</option>
+                  <option value="'TLAQUEPAQUE')">Tlaquepaque</option>
+                  <option value="'TLAJOMULCO DE ZÚÑIGA')">Tlajomulco</option>
+                  <option value="'EL SALTO')">El Salto</option>
+                  <option value="'TONALÁ')">Tonalá</option>
+                </select>
+              </div>
 
-                <!--    Género    -->
-                <div class="dropdownGenero">
-                    <select name="generos" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="generos">
+              <!--    Género    -->
+              <div class="dropdownGenero">
+                  <select name="generos" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="generos">
 
-                    <option value="genero">Género</option>
+                  <option value="'H' or genero= 'M')">Género</option>
 
-                    <option value="'H'">Hombre</option>
-                    <option value="'M'">Mujer</option>
-                  </select>
-                </div>
+                  <option value="'H')">Hombre</option>
+                  <option value="'M')">Mujer</option>
+                </select>
+              </div>
 
-                <!--    Edades    -->
-                <div class="dropdownEdades">
-                    <select name="edades" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="edades">
+              <!--    Edades    -->
+              <div class="dropdownEdades">
+                  <select name="edades" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="edades">
 
-                    <option value="edad">Edad</option>
+                  <option value="18 and edad <= 29) or (edad >=30 and edad <= 44) or (edad>=45 and edad <= 59) or edad>=60)">Edad</option>
 
-                    <option value="18 and edad <= 29">18 - 29</option>
-                    <option value="30 and edad <= 44">30 - 44</option>
-                    <option value="45 and edad <= 59">45 - 59</option>
-                    <option value="60">60+</option>
-                  </select>
-                </div>
+                  <option value="18 and edad <= 29))">18 - 29</option>
+                  <option value="30 and edad <= 44))">30 - 44</option>
+                  <option value="45 and edad <= 59))">45 - 59</option>
+                  <option value="60">60+</option>
+                </select>
+              </div>
 
-<!--
-                    Escolaridad
-                <div class="dropdownEscolaridades">
-                    <select name="escolaridades" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="escolaridades">
+          <!--
+                  Escolaridad
+              <div class="dropdownEscolaridades">
+                  <select name="escolaridades" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="escolaridades">
 
-                    <option value="escolaridad">Escolaridad</option>
+                  <option value="escolaridad">Escolaridad</option>
 
-                    <option value="secundaria<">Secundaria&lt; </option>
-                    <option value="preparatoria">Preparatoria</option>
-                    <option value="universidad+">Universidad+</option>
-                  </select>
-                </div>
--->
+                  <option value="secundaria<">Secundaria&lt; </option>
+                  <option value="preparatoria">Preparatoria</option>
+                  <option value="universidad+">Universidad+</option>
+                </select>
+              </div>
+          -->
 
-                <!--    NSE 8X7    -->
-                <div class="dropdownNSE8X7">
-                    <select name="nse8x7s" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="nse8x7s">
+              <!--    NSE 8X7    -->
+              <div class="dropdownNSE8X7">
+                  <select name="nse8x7s" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="nse8x7s">
 
-                    <option value="nse8x7">NSE 8X7</option>
+                  <option value="'AB' or nse_8x7='C+' or nse_8x7='C' or nse_8x7='C-' or nse_8x7='D+' or nse_8x7='D' or nse_8x7='E')">NSE 8X7</option>
 
-                    <option value="'A' or nse_8x7 = 'B' or nse_8x7 = 'C+'">A/B/C+</option>
-                    <option value="'C' or nse_8x7 = 'C-'">C/C-</option>
-                    <option value="'D+' or nse_8x7 = 'D' or nse_8x7 = 'E')">D+/D/E</option>
-                  </select>
-                </div>
+                  <option value="'AB' or nse_8x7 = 'C+')">A/B/C+</option>
+                  <option value="'C' or nse_8x7 = 'C-')">C/C-</option>
+                  <option value="'D+' or nse_8x7 = 'D' or nse_8x7 = 'E')">D+/D/E</option>
+                </select>
+              </div>
 
-                <!--    NSE 8X7    -->
-                <div class="dropdownNSE6X7">
-                    <select name="nse6x7s" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="nse6x7">
+              <!--    NSE 8X7    -->
+              <div class="dropdownNSE6X7">
+                  <select name="nse6x7s" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="nse6x7">
 
-                    <option value="nse6x7">NSE 6X7</option>
+                  <option value="'AB' or nse_6x7='C+' or nse_6x7='C' or nse_6x7='C-' or nse_6x7='D+' or nse_6x7='D' or nse_6x7='E')">NSE 6X7</option>
 
-                    <option value="'A' or nse_6x7 = 'B' or nse_6x7 = 'C+')">A/B/C+</option>
-                    <option value="'C' or nse_6x7 = 'C-')">C/C-</option>
-                    <option value="'D+' or nse_6x7 = 'D' or nse_6x7 = 'E')">D+/D/E</option>
-                  </select>
-                </div>
-            </div>
-        </center>
-        <input type="submit" value="Enviar">
+                  <option value="'AB' or nse_6x7 = 'C+')">A/B/C+</option>
+                  <option value="'C' or nse_6x7 = 'C-')">C/C-</option>
+                  <option value="'D+' or nse_6x7 = 'D' or nse_6x7 = 'E')">D+/D/E</option>
+                </select>
+              </div>
+          </div>
+          </center>
 
         <br><br>
       </form>
