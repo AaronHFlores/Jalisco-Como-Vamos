@@ -1,5 +1,3 @@
-<?php require("condb.php") ?>
-?>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -145,11 +143,12 @@
                   <select name="municipios" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="municipios">
 
                     <option value="municipio">Municipio</option>
-                    <option value="guadalajara">Guadalajara</option>
-                    <option value="zapopan">Zapopan</option>
-                    <option value="tlaquepaque">Tlaquepaque</option>
-                    <option value="tlajomulco">Tlajomulco</option>
-                    <option value="elsalto">El Salto</option>
+                    <option value="GUADALAJARA">Guadalajara</option>
+                    <option value="ZAPOPAN">Zapopan</option>
+                    <option value="TLAQUEPAQUE">Tlaquepaque</option>
+                    <option value="TLAJOMULCO DE ZÚÑIGA">Tlajomulco</option>
+                    <option value="EL SALTO">El Salto</option>
+                    <option value="TONALÁ">Tonalá</option>
                   </select>
                 </div>
 
@@ -159,8 +158,8 @@
 
                     <option value="genero">Género</option>
 
-                    <option value="hombre">Hombre</option>
-                    <option value="mujer">Mujer</option>
+                    <option value="'H'">Hombre</option>
+                    <option value="'M'">Mujer</option>
                   </select>
                 </div>
 
@@ -197,9 +196,9 @@
 
                     <option value="nse8x7">NSE 8X7</option>
 
-                    <option value="a/b/c+<">A/B/C+</option>
-                    <option value="c/c-">C/C-</option>
-                    <option value="d+/d/e">D+/D/E</option>
+                    <option value="'A' or nse_8x7 = 'B' or nse_8x7 = 'C+'">A/B/C+</option>
+                    <option value="'C' or nse_8x7 = 'C-'">C/C-</option>
+                    <option value="'D+' or nse_8x7 = 'D' or nse_8x7 = 'E')">D+/D/E</option>
                   </select>
                 </div>
 
@@ -209,9 +208,9 @@
 
                     <option value="nse6x7">NSE 6X7</option>
 
-                    <option value="a/b/c+<">A/B/C+</option>
-                    <option value="c/c-">C/C-</option>
-                    <option value="d+/d/e">D+/D/E</option>
+                    <option value="'A' or nse_6x7 = 'B' or nse_6x7 = 'C+')">A/B/C+</option>
+                    <option value="'C' or nse_6x7 = 'C-')">C/C-</option>
+                    <option value="'D+' or nse_6x7 = 'D' or nse_6x7 = 'E')">D+/D/E</option>
                   </select>
                 </div>
             </div>
