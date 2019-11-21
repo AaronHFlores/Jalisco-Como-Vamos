@@ -125,10 +125,10 @@
 <!--        <div>-->
             <center>
                 <div class=" btn-group btn-group-toggle" data-toggle="buttons" style="padding-top: 1em;" >
-                    <label class="btn btn-secondary btn-xs"><input type="checkbox" name="pregunta1" value = 1 id ="p1"  onfocus="validCheckOF" onblur="validCheckOB" checked>&iquest;Qu&eacute; tan satisfecha(o) est&aacute; <br> usted con su vida?</label>
+                    <label class="btn btn-secondary btn-xs"><input type="checkbox" name="pregunta1" value = 1 id ="p1"  onfocus="validCheckOF" onblur="validCheckOB" >&iquest;Qu&eacute; tan satisfecha(o) est&aacute; <br> usted con su vida?</label>
                     <label class="btn btn-primary btn-xs" ><input type="checkbox" name="pregunta2" value = 2 id ="p2"> &iquest;C&oacute;mo calificar&iacute;a su calidad<br> de vida?</label>
-                    <label style="width:250px; height:62px" class="btn btn-secondary btn-xs"><input  type="checkbox" name="pregunta3" id ="p3" onclick="questionSelect()" > &iquest;Qu&eacute; tan feliz es usted?</label>
-                    <label class="btn btn-primary btn-xs" ><input type="checkbox" name="pregunta4" id ="p4" onclick="questionSelect()" > &iquest;Qu&eacute; tan satisfecha(o) est&aacute;<br> con su vida afectiva emocional?</label>
+                    <label style="width:250px; height:62px" class="btn btn-secondary btn-xs"><input  type="checkbox" name="pregunta3" value = 3 id ="p3"> &iquest;Qu&eacute; tan feliz es usted?</label>
+                    <label class="btn btn-primary btn-xs" ><input type="checkbox" name="pregunta4" value = 4 id ="p4"  > &iquest;Qu&eacute; tan satisfecha(o) est&aacute;<br> con su vida afectiva emocional?</label>
                 </div>
             </center>
 <!--        </div>-->
@@ -170,10 +170,10 @@
 
                     <option value="edad">Edad</option>
 
-                    <option value="18-29">18 - 29</option>
-                    <option value="30-44">30 - 44</option>
-                    <option value="45-59">45 - 59</option>
-                    <option value="60+">60+</option>
+                    <option value="18 and edad <= 29">18 - 29</option>
+                    <option value="30 and edad <= 44">30 - 44</option>
+                    <option value="45 and edad <= 59">45 - 59</option>
+                    <option value="60">60+</option>
                   </select>
                 </div>
 

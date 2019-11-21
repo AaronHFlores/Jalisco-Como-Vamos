@@ -222,9 +222,10 @@
         <!--TABLE-->
         <div id="table">
             <?php
-              $valoresCheck = $_POST["pregunta"];
-              echo $valoresCheck[1];
-              echo $valoresCheck[2];
+              echo $_POST["pregunta1"];
+              echo $_POST["pregunta2"];
+              echo $_POST["pregunta3"];
+              echo $_POST["pregunta4"];
              ?>
         </div>
 
