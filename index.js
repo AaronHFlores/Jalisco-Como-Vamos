@@ -6,13 +6,23 @@ window.onload = function() {
 	questionSelect();
 };
 
-window.addEventListener( 'resize', () => {
-	let width = window.innerWidth
-	let height = window.innerHeight
-	renderer.setSize( width, height )
-	camera.aspect = width / height
-	camera.updateProjectionMatrix()
-})
+//window.addEventListener( 'resize', () => {
+//	let width = window.innerWidth
+//	let height = window.innerHeight
+//	renderer.setSize( width, height )
+//	camera.aspect = width / height
+//	camera.updateProjectionMatrix()
+//})
+//
+//$(document).ready(function(){
+//    $(window).scroll(function(){
+//        if($this).scrollTop() > 0){
+//            $('header').addClass(headerFix);
+//        }else{
+//            $('header').removeClass(headerFix);
+//        }
+//    });
+//});
 
 /*function validCheckOF(){
   var isChecked = document.getElementById('p1').checked;
@@ -33,6 +43,16 @@ function validCheckOB(){
     check.pregunta[0].disabled = false;
   }
 }*/
+$('.dropdown-toggle').dropdown(){
+    
+}
+
+function conection(){
+    
+}
+
+
+
 function questionSelect(){
   var isChecked = document.getElementById('mun').checked;
   var isChecked1 = document.getElementById('genero').checked;
