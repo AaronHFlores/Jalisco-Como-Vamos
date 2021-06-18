@@ -233,7 +233,7 @@
           }
 
           function tablep1(){
-            $conexion = pg_connect("host='localhost' dbname=JCV port=5432 user=postgres password=postgres") or die ("Error de Conexión".pg_last_error());
+            $conexion = pg_connect("host='ec2-107-22-195-114.compute-1.amazonaws.com' dbname=deg7j75iqji8ue port=5432 user=uxmgfpqiynjbmp password=da78995407d5013cffd47e7f8072730bb923f0ae5b96fff23b55a930106c938d") or die ("Error de Conexión".pg_last_error());
             $bus = search();
             $querycont = pg_query($conexion, "SELECT count(p1) as c FROM persona WHERE".$bus.";");
             $fil = pg_fetch_array($querycont);
@@ -270,7 +270,7 @@
           }
 
           function tablep2(){
-            $conexion = pg_connect("host='localhost' dbname=JCV port=5432 user=postgres password=postgres") or die ("Error de Conexión".pg_last_error());
+            $conexion = pg_connect("host='ec2-107-22-195-114.compute-1.amazonaws.com' dbname=deg7j75iqji8ue port=5432 user=uxmgfpqiynjbmp password=da78995407d5013cffd47e7f8072730bb923f0ae5b96fff23b55a930106c938d") or die ("Error de Conexión".pg_last_error());
             $bus = search();
             $querycont = pg_query($conexion, "SELECT count(p2) as c FROM persona WHERE".$bus.";");
             $fil = pg_fetch_array($querycont);
@@ -307,7 +307,7 @@
           }
 
           function tablep3(){
-            $conexion = pg_connect("host='localhost' dbname=JCV port=5432 user=postgres password=postgres") or die ("Error de Conexión".pg_last_error());
+            $conexion = pg_connect("host='ec2-107-22-195-114.compute-1.amazonaws.com' dbname=deg7j75iqji8ue port=5432 user=uxmgfpqiynjbmp password=da78995407d5013cffd47e7f8072730bb923f0ae5b96fff23b55a930106c938d") or die ("Error de Conexión".pg_last_error());
             $bus = search();
             $querycont = pg_query($conexion, "SELECT count(p3) as c FROM persona WHERE".$bus.";");
             $fil = pg_fetch_array($querycont);
@@ -344,7 +344,7 @@
           }
 
           function tablep4(){
-            $conexion = pg_connect("host='localhost' dbname=JCV port=5432 user=postgres password=postgres") or die ("Error de Conexión".pg_last_error());
+            $conexion = pg_connect("host='ec2-107-22-195-114.compute-1.amazonaws.com' dbname=deg7j75iqji8ue port=5432 user=uxmgfpqiynjbmp password=da78995407d5013cffd47e7f8072730bb923f0ae5b96fff23b55a930106c938d") or die ("Error de Conexión".pg_last_error());
             $bus = search();
             $querycont = pg_query($conexion, "SELECT count(p4) as c FROM persona WHERE".$bus.";");
             $fil = pg_fetch_array($querycont);
